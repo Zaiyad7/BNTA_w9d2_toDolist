@@ -13,6 +13,9 @@ const handleSubmit = (event) => {
         const newListItem = document.createElement('li');
         newListItem.innerText = newToDoText;
     }
+
+    // creating list item
+
     const newToDo = toDoForm.target;
     console.log(newToDo);
     const newListItem = document.createElement('li');
@@ -20,6 +23,8 @@ const handleSubmit = (event) => {
 
     const list = document.querySelector('#list');
     list.appendChild(newListItem);
+
+    // delete items from list
 
     const deleteButton = document.createElement('button');
         deleteButton.innerText = 'Delete';
@@ -38,6 +43,9 @@ console.log(toDoForm);
 toDoForm.addEventListener('submit', handleSubmit);
 
 const toDoList = document.querySelector('#list');
+
+
+// show date button
 
 const showDateButton = document.querySelector('#show-date');
 
