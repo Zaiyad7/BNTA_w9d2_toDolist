@@ -34,9 +34,14 @@ const handleSubmit = (event) => {
 
     newListItem.appendChild(deleteButton);
 
-  
-
 }
+
+
+// The below script allows users to add items to the list, 
+// mark items as completed, delete items, and display today's date.
+
+
+
 const toDoForm = document.querySelector('#todo-form');
 console.log(toDoForm);
 
